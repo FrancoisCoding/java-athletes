@@ -1,10 +1,8 @@
 package com.lambdaschool.solution;
 
-public class RugbyAthleteCreationInjector implements AthleteCreationInjector
-{
+public class RugbyAthleteCreationInjector implements AthleteCreationInjector {
     @Override
-    public Processor getProcess()
-    {
+    public Processor getProcess() {
         return new MyApplication(new RugbyAthleteImpl());
     }
 }
